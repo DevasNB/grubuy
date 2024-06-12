@@ -38,7 +38,7 @@ if (isset($_SESSION["user_Name"])) {
                         <div class="card-header">Product Picture</div>
                         <div class="card-body text-center">
                             <!-- Profile picture image-->
-                            <img class="card-img-top card-image-size3" src="/imagens/image icons/product_icon.png" alt="">
+                            <img class="card-img-top card-image-size3" src="imagens/image icons/product_icon.png" alt="">
                             <!-- Profile picture help block-->
                             <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
                             <!-- Profile picture upload button -->
