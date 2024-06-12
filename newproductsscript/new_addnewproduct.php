@@ -24,8 +24,9 @@ if (isset($_POST["submit"])) {
             $product_image['name'] = "productdefault.png";
         }
     } else {
-        header("location: ../myproducts.php?error=fail_to_upload_image");
-        exit();
+        //header("location: ../myproducts.php?error=fail_to_upload_image");
+        //exit();
+        $product_image['name'] = "productdefault.png";
     }
 
 
