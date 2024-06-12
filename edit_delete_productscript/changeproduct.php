@@ -31,10 +31,11 @@ if (isset($_POST["submit"])) {
             //exit();
             $product_image['name'] = "productdefault.png";
         }
-    } /*else {
-        header("location: ../myproducts.php?error=fail_to_upload_image");
-        exit();
-    }*/
+    } else {
+        //header("location: ../myproducts.php?error=fail_to_upload_image");
+        //exit();
+        $product_image['name'] = "productdefault.png";
+    }
     
     $stmt = $drena->prepare('UPDATE products set productName = ?, productDescription = ?, productImage = ?, productQuantity = ?, productPrice = ? WHERE productID = ?;');
     $stmt->execute(array($product_name, $product_description, $product_image['name'], $product_quantity, $product_price, $product_id));
