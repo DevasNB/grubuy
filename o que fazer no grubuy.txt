@@ -1,0 +1,1 @@
+clicar no link registar -> animação ativa-se -> muda de página
