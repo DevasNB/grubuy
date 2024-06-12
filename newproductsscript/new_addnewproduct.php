@@ -19,8 +19,8 @@ if (isset($_POST["submit"])) {
 
     if (is_uploaded_file($product_image['tmp_name'])) {
         if (!move_uploaded_file($product_image['tmp_name'], $destination_path)) {
-            header("location: ../myproducts.php?error=imagenotsent");
-            exit();
+            //header("location: ../myproducts.php?error=imagenotsent");
+            //exit();
             $product_image['name'] = "productdefault.png";
         }
     } else {
