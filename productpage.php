@@ -22,7 +22,7 @@ session_start();
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="color-background2">
@@ -81,7 +81,7 @@ session_start();
                     <img class="card-img-top card-image-size2 style-border5 mb-3 ms-md-3" src="./uploads/products/' . $product_edit['productImage'] . '" alt="..." />
                 </div>
                 <div class="col-md-6">
-                    <form action="../userpage.php" method="POST">
+                    <form action="userpage.php" method="POST">
                         <input name="userName" type="hidden" value="' . $username["userName"] . '" readonly/>
                         <h4 class="mb-1">Seller: 
                             <button class="btn btn-primary mb-1" type="submit" name="submit">' . $username["userName"] . '</button>

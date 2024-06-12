@@ -17,7 +17,7 @@ if (isset($_POST["submit"])) {
     $stmt = $drena->prepare('DELETE FROM products WHERE productID = ?;');
     $stmt->execute(array($productID));
     
-    $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
     
     header("location: ../myproducts.php?error=productdeleted");
 } 

@@ -11,13 +11,13 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 style-border2">
 		<div class="container-fluid">
-			<img class="me-5" src="/imagens/grubuy5.png" width="80px" href="index.php">
+			<img class="me-5" src="imagens/grubuy5.png" width="80px" href="index.php">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -48,7 +48,7 @@
 									<li><a class="dropdown-item" href="myaccount.php">My Account</a></li>
 									<li><a class="dropdown-item" href="settings.php">Settings</a></li>
 									<li><hr class="dropdown-divider"></li>
-									<li><a class="dropdown-item text-danger" href="/loginscript/getlogout.php">Logout</a></li>
+									<li><a class="dropdown-item text-danger" href="loginscript/getlogout.php">Logout</a></li>
 								</ul>
 							  </li>		
 							  <li class="nav-item">

@@ -11,7 +11,7 @@ session_start();
 if (isset($_SESSION["user_Name"])) {
     echo '';
 } else {
-    header("location: ../login.php?error=startyoursession");
+    header("location: login.php?error=startyoursession");
 }
 
 //select from database products of the users connect
@@ -40,11 +40,11 @@ class picmyproducts extends Database
 
     <title>Grubuy - My Product</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/imagens/grubuy5.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/grubuy5.png" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="color-background">
@@ -61,7 +61,7 @@ class picmyproducts extends Database
                 <div class="col-md-3 mt-3">
                     <a href="addnewproduct.php">
                         <div class="card style-border4">
-                            <img src="/imagens/image icons/addproduct_icon.png" class="card-img-top card-image-size3">
+                            <img src="imagens/image icons/addproduct_icon.png" class="card-img-top card-image-size3">
                             <!--<div class="card-body">
                                 <h5 class="card-title text-uppercase">Add New Product</h5>
                                 <p class="card-text"></p>
@@ -85,7 +85,7 @@ class picmyproducts extends Database
 
                     echo '<div class="col-md-3 mt-3">
                             <div class="card style-border4">
-                            <img src="/uploads/products/' . $numberproducts[$i]['productImage'] . '" class="card-img-top card-image-size" alt="...">
+                            <img src="uploads/products/' . $numberproducts[$i]['productImage'] . '" class="card-img-top card-image-size" alt="...">
                               <div class="card-body">
                                 <h5 class="card-title text-primary title-1line">' . $numberproducts[$i]['productName'] . '</h5>
                                 <h4 class="badge bg-warning">' . $numberproducts[$i]['productPrice'] . ' €</h4>

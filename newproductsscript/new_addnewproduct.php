@@ -15,7 +15,7 @@ if (isset($_POST["submit"])) {
     //image upload
     // Destinaiton path
     // Concatenating uploaded file name with destination path
-    $destination_path = "/home/grubuy/www/cabanao/uploads/products/" . $product_image['name'];
+    $destination_path = "../uploads/products/" . $product_image['name'];
 
     if (is_uploaded_file($product_image['tmp_name'])) {
         if (!move_uploaded_file($product_image['tmp_name'], $destination_path)) {

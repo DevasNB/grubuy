@@ -23,22 +23,22 @@ if (isset($_POST["submit"])) {
     //image upload
     // Destinaiton path
     // Concatenating uploaded file name with destination path
-    $destination_path = "/home/grubuy/www/cabanao/uploads/products/" . $product_image['name'];
+    $destination_path = "../uploads/products/" . $product_image['name'];
 
     if (is_uploaded_file($product_image['tmp_name'])) {
         if (!move_uploaded_file($product_image['tmp_name'], $destination_path)) {
             header("location: ../myproducts.php?error=imagenotsent");
             exit();
         }
-    } else {
+    } /*else {
         header("location: ../myproducts.php?error=fail_to_upload_image");
         exit();
-    }
+    }*/
     
     $stmt = $drena->prepare('UPDATE products set productName = ?, productDescription = ?, productImage = ?, productQuantity = ?, productPrice = ? WHERE productID = ?;');
     $stmt->execute(array($product_name, $product_description, $product_image['name'], $product_quantity, $product_price, $product_id));
     
-    $stmt->fetchAll(PDO::FETCH_ASSOC);
+    //$stmt->fetchAll(PDO::FETCH_ASSOC);
 
     header("location: ../myproducts.php?error=productedited");
 }

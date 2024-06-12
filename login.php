@@ -25,7 +25,7 @@
 
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 offset-xl-1">
-          <form action="loginscript/getlogin.php" method="POST">
+          <form action="getlogin.php" method="POST">
             <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
               <p class="mytext mb-3 me-3">Sign in</p>
               <!-- Buttões de iniciar sessão formas alternativas

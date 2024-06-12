@@ -20,7 +20,7 @@ if (isset($_SESSION["user_Name"])) {
     <link rel="shortcut icon" type="image/x-icon" href="/imagens/grubuy5.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="color-background">
@@ -29,7 +29,7 @@ if (isset($_SESSION["user_Name"])) {
     ?>
 
     <div class="container px-4 mt-4">
-        <form action="/newproductsscript/new_addnewproduct.php" method="POST" enctype="multipart/form-data">
+        <form action="newproductsscript/new_addnewproduct.php" method="POST" enctype="multipart/form-data">
             <div class="row">
 
                 <div class="col-xl-4">

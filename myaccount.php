@@ -6,7 +6,7 @@ session_start();
 if (isset($_SESSION["user_Name"])) {
     echo '';
 } else {
-    header("location: ../login.php?error=startyoursession");
+    header("location: login.php?error=startyoursession");
 }
 
 ?>
@@ -23,7 +23,7 @@ if (isset($_SESSION["user_Name"])) {
     <link rel="shortcut icon" type="image/x-icon" href="/imagens/grubuy5.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="color-background">
@@ -65,7 +65,7 @@ if (isset($_SESSION["user_Name"])) {
                         <!-- Profile picture image-->';
                         
                         if (empty($user_edit["userImage"])) {
-                            echo '<img class="style-border5 card-img-top card-image-size3" src="./imagens/image icons/person_icon.png" alt="null">';
+                            echo '<img class="style-border5 card-img-top card-image-size3" src="imagens/image icons/person_icon.png" alt="null">';
                         }
                         else {
                             echo '<img class="style-border5 card-img-top card-image-size" src="./uploads/users/'.$user_edit["userImage"].'" alt="notnull">';
@@ -115,7 +115,7 @@ if (isset($_SESSION["user_Name"])) {
                                             <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="' . $result . '" disabled>
                                         </div>
                                     </div>
-                                    <a href="../editprofile.php" class="btn btn-warning" type="button">Edit profile</a>';
+                                    <a href="editprofile.php" class="btn btn-warning" type="button">Edit profile</a>';
             ?>
         </div>
     </div>

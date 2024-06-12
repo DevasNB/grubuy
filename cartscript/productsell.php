@@ -33,12 +33,12 @@ if (isset($_POST["submit"])) {
             $stmt2 = $drena->prepare('UPDATE products set productQuantity = ? WHERE productID = ?;');
             $stmt2->execute(array($newprodQuantity, $picprd[$i]["prodID"]));
 
-            $stmt2->fetch(PDO::FETCH_ASSOC);
+            //$stmt2->fetch(PDO::FETCH_ASSOC);
 
             $stmt4 = $drena->prepare('DELETE FROM cart WHERE prodID = ?;');
             $stmt4->execute(array($picprd[$i]["prodID"]));
 
-            $stmt4->fetch(PDO::FETCH_ASSOC);
+            //$stmt4->fetch(PDO::FETCH_ASSOC);
 
             header("location: ../mycart.php?success=productincartdeleted");
 

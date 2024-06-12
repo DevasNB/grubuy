@@ -11,7 +11,7 @@ session_start();
 
     <title>Grubuy - About</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="/imagens/grubuy5.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/grubuy5.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
@@ -46,7 +46,7 @@ session_start();
                                 <br>On the site mentioned above, you can go down to the contact page and send an email to the creator. All feedback is welcome and a help for the creator.
                             </p>
                         </div>
-                        <img class="p-5" src="/imagens/about-thankyou.png">
+                        <img class="p-5" src="imagens/about-thankyou.png">
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ class SendProfile extends Database
             header("location: ../editprofile.php?error=stmtfailed");
             exit();
         }
-        $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        //$user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         session_start();
         $_SESSION["user_Website"] = $user[0]["userWebsite"];

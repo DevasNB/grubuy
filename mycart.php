@@ -11,7 +11,7 @@ session_start();
 if (isset($_SESSION["user_Name"])) {
     echo '';
 } else {
-    header("location: ../login.php?error=startyoursession");
+    header("location: login.php?error=startyoursession");
 }
 ?>
 
@@ -30,7 +30,7 @@ if (isset($_SESSION["user_Name"])) {
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 </head>
 
@@ -134,7 +134,7 @@ if (isset($_SESSION["user_Name"])) {
                                                     <div class="d-flex justify-content-between">
                                                         <div class="d-flex flex-row align-items-center">
                                                             <div>
-                                                                <img src="../uploads/products/' . $numberproducts[$i]["productImage"] . '" class="card-img-top card-image-size3 style-border5" alt="Shopping item" style="width: 65px;">
+                                                                <img src="uploads/products/' . $numberproducts[$i]["productImage"] . '" class="card-img-top card-image-size3 style-border5" alt="Shopping item" style="width: 65px;">
                                                             </div>
                                                             <div class="ms-3">
                                                                 <h5>' . $numberproducts[$i]["productName"] . '</h5>
@@ -148,7 +148,7 @@ if (isset($_SESSION["user_Name"])) {
                                                             <div style="width: 80px;">
                                                                 <h5 class="mb-0">' . $numberproducts[$i]["productPrice"] . '</h5>
                                                             </div>
-                                                            <form action="../cartscript/deletecart.php" method="POST">
+                                                            <form action="cartscript/deletecart.php" method="POST">
                                                                 <input name="prodID" type="hidden" value="' . $prodID . '" readonly/>
                                                                 <button class="btn btn-danger" name="submit" type="submit"><i class="bi bi-trash-fill"></i></button>
                                                             </form>
