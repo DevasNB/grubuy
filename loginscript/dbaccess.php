@@ -8,8 +8,8 @@ class Database
             try {
 
 
-                  $username = "CCPDBUser";
-                  $password = "CCPDBPassword";
+                  $username = "GruBuyDBUser";
+                  $password = "GruBuyDBPassword";
 
 
                   $conn = new PDO("mysql:host=10.0.1.4;dbname=grubuy", $username, $password);
